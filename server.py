@@ -24,7 +24,7 @@ f.context = FlowContext(
 def chat():
     question=request.args.get("question")
     result = f(question=question, chat_history=chat_history)
-    chat_history.append({"inputs": {'question': question}, "outputs": {'answer': result}})
+    chat_history.append({"inputs": {'question': question}, "outputs": result})
     return result["answer"]
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port)
