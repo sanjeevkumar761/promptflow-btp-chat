@@ -43,7 +43,8 @@ The Generative AI App Template empowers SAP customers, partners, and architects 
 1. Clone this repository.
 2. Adapt the template for your specific needs.
 
-cf login --sso
+Install SAP BTP cf CLI https://docs.cloudfoundry.org/cf-cli/install-go-cli.html  
+cf login --sso  
 cf push
 
 cf set-env promptflowchatapp AZURE_OPENAI_API_KEY <AOAI API Key>
